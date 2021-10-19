@@ -16,7 +16,6 @@ const UserId = ({navigation}) => {
   const [error, setError] = useState('');
 
   const pressHandler = () => {
-    console.log(id + '>>>>>>>>>>>>' + userIds.includes(id));
     userIds.includes(id)
       ? navigation.push('Albums')
       : setError(" user doesn't exist");
